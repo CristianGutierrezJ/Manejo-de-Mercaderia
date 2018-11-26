@@ -45,19 +45,6 @@ public class Catalogo {
 
     }
 
-    public static void main(String[] args) {
-
-        String mensaje = ingresarMensaje();
-
-        Integer cantidadRepeticiones = vecesQueDeseaImprimir();
-
-        for (int i = 0; i < cantidadRepeticiones; i++) {
-            //imprimir("A Fabri le gusta la...");
-            imprimir(mensaje);
-        }
-
-    }
-
     private static Integer vecesQueDeseaImprimir() {
         String repeticiones = JOptionPane.showInputDialog("¿Cuantas veces desea repetir el mensaje?");
         return Integer.parseInt(repeticiones);
